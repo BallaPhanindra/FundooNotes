@@ -9,12 +9,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
+import { ForgotComponent } from './Component/forgot/forgot.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     SigninComponent,
+    ForgotComponent,
   ],
   imports: [
     BrowserModule,
