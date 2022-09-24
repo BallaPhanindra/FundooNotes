@@ -1,0 +1,134 @@
+.OuterDiv{
+    width: 97vw;
+    height: 100vh;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.FirstInnerDiv{
+    border: 1px solid rgb(230, 230, 230);
+    width: 55%;
+    height: 85%;
+    margin: 20px;
+    padding: 48px 40px;
+    padding-bottom: 36px;
+    display:flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.InnerDiv{
+    display:flex;
+    flex-direction: row;
+    width: 100%;
+}
+.funDo{
+    font-size: 30px;
+    padding-top: 5px;
+    padding-bottom: 25px;
+    display: flex;
+    flex-direction: row;
+}
+.F{
+    color: #1a73e8;
+}
+.u{
+    color: red;
+}
+.n{
+    color: orange;
+}
+.D{
+    color: goldenrod;
+}
+.o{
+    color: lightblue;
+}
+.oo{
+    color:lightpink;
+}
+.myDiv{
+    margin: 10px;
+    padding: 0px,20px;
+}
+.imageDiv{
+    display:flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 30px;
+    text-align: center;
+    font-size: 16px;
+    line-height: 20px;
+    
+    padding-left: 20px;
+    font-weight: 300;
+}
+.image{
+    width: 200px;
+    height: 200px;
+}
+.nameDiv{
+    display:flex;
+    flex-direction: row;
+}
+.firstNameDiv{
+    margin-right: 10px;
+}
+.UserName{
+  width: 100%;
+  height: 60px;    
+}
+.PasswordDiv{
+   height: 60px;
+   margin-right: 10px;
+}
+.Confirm{
+    height: 60px;
+}
+.matButton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 5px;
+    padding-right: 0px;
+    padding-top: 45px;
+}
+.loginButton{
+    padding-right: 100px;
+    margin-right: 10px;
+}
+.login{
+    font-size: 16px;
+    font-style: normal;
+    margin-bottom: 16px;
+    padding-top: 5px;
+    border-radius: 4px;
+    color: #1a73e8;
+    display: inline-block;
+    font-weight: 500;
+    letter-spacing: .25px;
+    outline: 0;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    font-size: inherit;
+    padding: 0;
+    text-align: left;
+    border: 0;
+}
+.NextButton{
+    margin-left: 100px;
+}
+.mat-raised-button{
+    background-color:#1a73e8;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+.para{
+    margin-left: 10px;
+    font-weight: 250;
+}
