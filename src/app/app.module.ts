@@ -10,6 +10,7 @@ import {MatFormFieldModule} from '@angular/material/form-field';
 import {MatInputModule} from '@angular/material/input';
 import {MatButtonModule} from '@angular/material/button';
 import { ForgotComponent } from './Component/forgot/forgot.component';
+import { ResetComponent } from './Component/reset/reset.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { ForgotComponent } from './Component/forgot/forgot.component';
     RegisterComponent,
     SigninComponent,
     ForgotComponent,
+    ResetComponent,
   ],
   imports: [
     BrowserModule,
