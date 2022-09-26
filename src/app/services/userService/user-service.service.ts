@@ -17,7 +17,7 @@ export class UserService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpService.postService('https://localhost:4200/user/RegisterUser', data, false, header)
+    return this.httpService.postService('https://localhost:44300/User/RegisterUser', data, false, header)
   }
   signin(data: any) {
     console.log(data);
@@ -26,7 +26,7 @@ export class UserService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpService.postService('https://localhost:4200/user/signinUser', data, false, header)
+    return this.httpService.postService('https://localhost:44300/User/LoginUser', data, false, header)
   }
   forgot(data: any) {
     console.log(data);
@@ -35,7 +35,7 @@ export class UserService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpService.postService('https://localhost:4200/user/ForgotPassword/{email}', data, false, header)
+    return this.httpService.postService('https://localhost:44300/User/ForgetPassword?email=ballaphanindra%40gmail.com', data, false, header)
   }
   reset(data: any) {
     let header = {
@@ -43,6 +43,6 @@ export class UserService {
         'Content-Type': 'application/json'
       })
     }
-    return this.httpService.putService('https://localhost:4200/user/ResetPassword', data, true, header)
+    return this.httpService.putService('https://localhost:44300/User/ResetPassword', data, false, header)
   }
 }

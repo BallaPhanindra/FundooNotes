@@ -27,7 +27,8 @@ import { ResetComponent } from './Component/reset/reset.component';
     MatFormFieldModule,
     MatInputModule,
     MatButtonModule,
-    ReactiveFormsModule,HttpClientModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
