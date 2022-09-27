@@ -13,13 +13,31 @@ import {MatInputModule} from '@angular/material/input';
 import { ForgotComponent } from './Component/forgot/forgot.component';
 import {MatButtonModule} from '@angular/material/button';
 import { ResetComponent } from './Component/reset/reset.component';
+import { ArchieveComponent } from './Component/archieve/archieve.component';
+import { CreateNoteComponent } from './Component/create-note/create-note.component';
+import { DashboardComponent } from './Component/dashboard/dashboard.component';
+import { DisplayNoteComponent } from './Component/display-note/display-note.component';
+import { GetallNotesComponent } from './Component/getall-notes/getall-notes.component';
+import { IconComponent } from './Component/icon/icon.component';
+import { TrashComponent } from './Component/trash/trash.component';
+import {MatListModule} from '@angular/material/list';
+import {MatIconModule} from '@angular/material/icon';
+import {MatSidenavModule} from '@angular/material/sidenav';
+import {MatToolbarModule} from '@angular/material/toolbar';
 @NgModule({
   declarations: [
     AppComponent,
     RegisterComponent,
     SigninComponent,
     ForgotComponent,
-    ResetComponent  ],
+    ResetComponent,
+    ArchieveComponent,
+    CreateNoteComponent,
+    DashboardComponent,
+    DisplayNoteComponent,
+    GetallNotesComponent,
+    IconComponent,
+    TrashComponent  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -28,7 +46,11 @@ import { ResetComponent } from './Component/reset/reset.component';
     MatInputModule,
     MatButtonModule,
     ReactiveFormsModule,
-    HttpClientModule
+    HttpClientModule,
+    MatListModule,
+    MatIconModule,
+    MatSidenavModule,
+    MatToolbarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
