@@ -1,17 +1,27 @@
-<head>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-</head>
-<div class="OuterDiv">
-    <div class="innerDiv">
-        <div>
-            <input class="search" type="text" placeholder="Title">
-        </div>
-        <div>
-            <input class="mySearch" type="text" placeholder="Take a note">
-        </div>
-        <div >
-            <app-icon></app-icon>
-        </div>
+<div class="innDiv">
+    <div class="OutDiv" *ngFor="let note of noteArr">
+        <div (click)="openDialog(note)">
+            <div>
+                <p> {{note.title}}</p>
+            </div>
+            <div>
+                <p>{{note.description}}</p>
+            </div>
     </div>
 </div>
+<div role="button" class="add">
+    <img class="divImg" src="../../../assets/person_add_FILL0_wght400_GRAD0_opsz48.svg">
+</div>
+<div role="button" class="add">
+    <img class="divImg" src="../../../assets/palette_FILL0_wght400_GRAD0_opsz48.svg">
+</div>
+<div role="button" class="add">
+    <img class="divImg" src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg">
+</div>
+<div role="button" class="add">
+    <img class="divImg" src="../../../assets/image_FILL0_wght400_GRAD0_opsz48.svg">
+</div>
+<div role="button" class="add">
+    <img class="divImg" src="../../../assets/more_vert_FILL0_wght400_GRAD0_opsz48.svg">
+</div>
+</div>      

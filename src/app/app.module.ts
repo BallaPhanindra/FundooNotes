@@ -17,13 +17,16 @@ import { ArchieveComponent } from './Component/archieve/archieve.component';
 import { CreateNoteComponent } from './Component/create-note/create-note.component';
 import { DashboardComponent } from './Component/dashboard/dashboard.component';
 import { DisplayNoteComponent } from './Component/display-note/display-note.component';
-import { GetallNotesComponent } from './Component/getall-notes/getall-notes.component';
+import { GetAllNotesComponent } from './Component/getall-notes/getall-notes.component';
 import { IconComponent } from './Component/icon/icon.component';
 import { TrashComponent } from './Component/trash/trash.component';
 import {MatListModule} from '@angular/material/list';
 import {MatIconModule} from '@angular/material/icon';
 import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import { FormsModule } from '@angular/forms';
+import { UpdateNotesComponent } from './Component/update-notes/update-notes.component';
+import { MatDialogModule } from '@angular/material/dialog';
 @NgModule({
   declarations: [
     AppComponent,
@@ -35,9 +38,11 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     CreateNoteComponent,
     DashboardComponent,
     DisplayNoteComponent,
-    GetallNotesComponent,
+    GetAllNotesComponent,
     IconComponent,
-    TrashComponent  ],
+    TrashComponent,
+    UpdateNotesComponent
+  ],
   imports: [
     BrowserModule,
     AppRoutingModule,
@@ -50,7 +55,9 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     MatListModule,
     MatIconModule,
     MatSidenavModule,
-    MatToolbarModule
+    MatToolbarModule,
+    FormsModule,
+    MatDialogModule
   ],
   providers: [],
   bootstrap: [AppComponent]
