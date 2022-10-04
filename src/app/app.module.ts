@@ -27,6 +27,7 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import { FormsModule } from '@angular/forms';
 import { UpdateNotesComponent } from './Component/update-notes/update-notes.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { AuthGuordServiceService } from './services/AuthGuordServices/auth-guord-service.service';
 @NgModule({
   declarations: [
     AppComponent,
@@ -59,7 +60,7 @@ import { MatDialogModule } from '@angular/material/dialog';
     FormsModule,
     MatDialogModule
   ],
-  providers: [],
+  providers: [AuthGuordServiceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
