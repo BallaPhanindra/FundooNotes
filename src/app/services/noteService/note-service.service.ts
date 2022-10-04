@@ -23,8 +23,7 @@ AddNotes(data: any) {
 }
 
 getNoteList(){
-  
-  
+
   let headers = {
     headers: new HttpHeaders({
 
@@ -46,18 +45,36 @@ updateNotes(dat: any) {
   return this.http.putService(`https://localhost:44300/Note/UpdateNote/${dat.NoteId}`, dat,true, header)
 }
 
-getTrashNote(){
-  this.token= localStorage.getItem('token')
-  console.log(this.token);
-  console.log("inside getnote service");
-
-  let headers = {
+trashNote(dat: any){
+  console.log(dat,this.token);
+  let header = {
     headers: new HttpHeaders({
-      'Content-type': 'application/json',
-      'Authorization': "Bearer "+this.token
+      'Content-Type': 'application/json',
+      'Authorization': "Bearer "+this.token 
     })
   }
-  return this.http.getService(`https://localhost:44300/Note/TrashNote/${3}`,true,headers)
+  return this.http.putService(`https://localhost:44300/Note/TrashNote/${dat}`,{}, true, header)
 }
 
+archiveNote(dat: any){
+  console.log(dat,this.token);
+  let header = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': "Bearer "+this.token 
+    })
+  }
+  return this.http.putService(`https://localhost:44300/Note/ArchieveNote/${dat}`, {}, true, header)
+}
+
+DeleteNote(dat: any){
+  console.log(dat,this.token);
+  let header = {
+    headers: new HttpHeaders({
+      'Content-Type': 'application/json',
+      'Authorization': "Bearer "+this.token 
+    })
+  }
+  return this.http.DeleteService(`https://localhost:44300/Note/DeleteNote/${dat}`, true, header)
+}
 }
